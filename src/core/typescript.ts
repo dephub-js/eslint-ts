@@ -22,7 +22,7 @@ const tsConfig: Linter.Config[] = defineConfig([
   ...jsConfig,
   ...tseslintRecommended,
   ...tseslintStrict,
-  importX.flatConfigs.typescript as Linter.Config,
+  importX.flatConfigs.typescript,
   {
     files,
     languageOptions: {
@@ -34,8 +34,7 @@ const tsConfig: Linter.Config[] = defineConfig([
       },
       sourceType: 'module',
     },
-    name: 'lint/typescript',
-
+    name: 'eslint/typescript',
     rules: {
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-base-to-string': 'warn',
@@ -66,6 +65,6 @@ const tsConfig: Linter.Config[] = defineConfig([
       'import-x/no-nodejs-modules': 'warn',
     },
   },
-]);
+] as Linter.Config[]);
 
 export default tsConfig;
