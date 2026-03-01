@@ -62,7 +62,6 @@ const tsConfig: Linter.Config[] = defineConfig([
       '@typescript-eslint/restrict-template-expressions': 'warn',
       '@typescript-eslint/switch-exhaustiveness-check': 'warn',
       'import-x/no-dynamic-require': 'warn',
-      'import-x/no-nodejs-modules': 'warn',
     },
   },
 ] as Linter.Config[]);

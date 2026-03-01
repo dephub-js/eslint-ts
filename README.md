@@ -19,10 +19,10 @@
 
 ## Installation 📦
 
-- npm: `npm install -D eslint @dephub/eslint-js @dephub/eslint-ts`
-- pnpm: `pnpm add -D eslint @dephub/eslint-js @dephub/eslint-ts`
-- yarn: `yarn add -D eslint @dephub/eslint-js @dephub/eslint-ts`
-- bun: `bun add -D eslint @dephub/eslint-js @dephub/eslint-ts`
+- npm: `npm install -D eslint @dephub/eslint-ts`
+- pnpm: `pnpm add -D eslint @dephub/eslint-ts`
+- yarn: `yarn add -D eslint @dephub/eslint-ts`
+- bun: `bun add -D eslint @dephub/eslint-ts`
 
 ---
 

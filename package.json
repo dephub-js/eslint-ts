@@ -1,7 +1,7 @@
 {
   "name": "@dephub/eslint-ts",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Opinionated modern ESLint configuration for JavaScript and TypeScript projects.",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
