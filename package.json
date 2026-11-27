@@ -1,0 +1,82 @@
+{
+  "name": "@dephub/eslint-ts",
+  "type": "module",
+  "version": "1.0.8",
+  "description": "Opinionated modern ESLint configuration for JavaScript and TypeScript projects.",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublishOnly": "pnpm test && pnpm build && pnpm check",
+    "release": "pnpm publish",
+    "docs": "lineo md 'src/**/*.ts' --outFile code.md --outDir temp",
+    "test": "node --test",
+    "check": "pnpm fmt && pnpm lint && pnpm check-types",
+    "check-types": "tsc --noEmit --skipLibCheck",
+    "lint": "eslint . --fix --max-warnings 0",
+    "fmt": "prettier --write .",
+    "clean": "rm -rf dist",
+    "prepack": "pnpm check && pnpm build",
+    "pack": "pnpm pack",
+    "build": "vite build",
+    "dev": "vite build -w"
+  },
+  "keywords": [
+    "eslint-ts",
+    "lint",
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "ts",
+    "config",
+    "preset",
+    "linter",
+    "code-quality"
+  ],
+  "author": {
+    "name": "Estarlin R",
+    "email": "dev@estarlincito.com",
+    "url": "https://estarlincito.com"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dephub-js/eslint-ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dephub-js/eslint-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dephub-js/eslint-ts/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@dephub/eslint-js": "^1.0.8",
+    "@types/eslint": "^9.6.1",
+    "@typescript-eslint/parser": "^8.74.0",
+    "eslint": "^10.15.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import-x": "^4.18.1",
+    "typescript-eslint": "^8.74.0"
+  },
+  "devDependencies": {
+    "@dephub/glob": "^1.0.3",
+    "@dephub/path": "^2.0.1",
+    "@types/node": "^26.6.11",
+    "prettier": "^3.10.1",
+    "typescript": "6.0.3",
+    "vite": "^8.4.0",
+    "vite-plugin-dts": "^5.1.2"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "packageManager": "pnpm@10.30.3"
+}
